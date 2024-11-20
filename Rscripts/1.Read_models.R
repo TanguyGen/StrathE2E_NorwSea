@@ -1,6 +1,6 @@
 #install.packages("StrathE2E2", repos="https://www.marineresourcemodelling.maths.strath.ac.uk/sran/")
 
-rm(list=ls())
+rm(list=ls()) #clear environment
 
 library(StrathE2E2)
 

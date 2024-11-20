@@ -1,4 +1,4 @@
-rm(list=ls())
+rm(list=ls()) #clear environment
 
 packages<- c("StrathE2E2", "dplyr", "ggplot2", "patchwork") #list of packages
 lapply(packages, library, character.only = TRUE)
