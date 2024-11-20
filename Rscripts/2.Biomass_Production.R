@@ -99,7 +99,7 @@ p4<-ggplot(Fish_mass_prod, aes(x = Decade, y = Production_demer, color = Scenari
 
 
 # Open a pdf file
-pdf("rplot.pdf") 
+pdf("Plots/Mass_Prod.pdf") 
 # 2. Create a plot
 (p1|p2)/(p3|p4)+ 
   plot_layout(guides = "collect") & 
