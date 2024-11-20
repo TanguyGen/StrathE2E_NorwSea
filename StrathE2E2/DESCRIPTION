@@ -1,0 +1,29 @@
+Package: StrathE2E2
+Version: 4.0.1
+Title: End-to-End Marine Food Web Model
+Author: Michael Heath [aut],
+    Ian Thurlbeck [ctb]
+Maintainer: Michael Heath <m.heath@strath.ac.uk>
+Depends: R (>= 3.6.0),
+Imports: deSolve, methods, NetIndices
+Description: A dynamic model of 
+    the big-picture, whole ecosystem effects of hydrodynamics, 
+	temperature, nutrients, and fishing on continental shelf marine 
+	food webs. The package is described in: Heath, M.R., 
+	Speirs, D.C., Thurlbeck, I. and Wilson, R.J. (2021) 
+	<doi:10.1111/2041-210X.13510> StrathE2E2: An R package 
+	for modelling the dynamics of marine food webs and 
+	fisheries. Methods in Ecology and Evolution 12, 280-287.
+License: GPL (>= 2)
+LazyData: yes
+NeedsCompilation: yes
+Date: 2024-02-02
+URL: https://www.marineresourcemodelling.maths.strath.ac.uk/strathe2e/
+Suggests: knitr, StrathE2E2examples, testthat (>= 2.1.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Additional_repositories:
+        https://www.marineresourcemodelling.maths.strath.ac.uk/strathe2e/articles/Pkg_versions.html
+Built: R 4.3.1; x86_64-w64-mingw32; 2024-05-16 09:43:21 UTC; windows
+Archs: x64

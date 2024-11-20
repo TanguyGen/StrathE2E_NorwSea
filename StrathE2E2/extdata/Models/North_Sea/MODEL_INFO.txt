@@ -1,0 +1,27 @@
+Model region      : North_Sea
+StrathE2E2 version: 4.0.1
+
+Model variant name: 1970-1999
+Release date      : 30-05-2022
+Implementation originally produced in the NERC Marine Ecosystem Programme (https://marine-ecosystems.org.uk/)
+Driving data represent a climatological annual cycle for the period 1970-1999
+Hydrodynamnic driving data from NEMO-ERSEM 7km model (https://www.uk-ssb.org/science_components/work_package_4/)
+Nutrient driving data from ICES and BODC data archives and informed by NEMO-ERSEM
+Atmospheric driving data from EMEP (https://www.emep.int/)
+River driving data from a statistical models of rainfall river flow and nutrent monitoring data (https://strathprints.strath.ac.uk/18588/6/strathprints018588.pdf)
+Fishing data from ICES and STECF (https://www.ices.dk/data/dataset-collections/Pages/Fish-catch-and-stock-assessment.aspx and https://stecf.jrc.ec.europa.eu/dd/fdi)
+Setup parameters modified May 2022 to be consistent with StrathE2E 4.0.0
+Documentation: https://www.marineresourcemodelling.maths.strath.ac.uk/resources/StrathE2E2/documents/4.0.0/StrathE2E2_North_Sea_model.pdf
+
+Model variant name: 2003-2013
+Release date      : 30-05-2022
+Implementation originally produced in the NERC Marine Ecosystem Programme (https://marine-ecosystems.org.uk/)
+Driving data represent a climatological annual cycle for the period 2003-2013
+Hydrodynamnic driving data from NEMO-ERSEM 7km model (https://www.uk-ssb.org/science_components/work_package_4/)
+Nutrient driving data from ICES and BODC data archives and informed by NEMO-ERSEM
+Atmospheric driving data from EMEP (https://www.emep.int/)
+River driving data from a statistical models of rainfall river flow and nutrent monitoring data (https://strathprints.strath.ac.uk/18588/6/strathprints018588.pdf)
+Fishing data from ICES and STECF (https://www.ices.dk/data/dataset-collections/Pages/Fish-catch-and-stock-assessment.aspx and https://stecf.jrc.ec.europa.eu/dd/fdi)
+Setup parameters modified May 2022 to be consistent with StrathE2E 4.0.0
+Documentation: https://www.marineresourcemodelling.maths.strath.ac.uk/resources/StrathE2E2/documents/4.0.0/StrathE2E2_North_Sea_model.pdf
+

@@ -1,0 +1,90 @@
+StrathE2E2              StrathE2E2 Package
+e2e_calculate_hrscale   Calculate initial values of the scaling
+                        parameters for the fishing fleet model which
+                        link effort to harvest ratios.
+e2e_compare_obs         Box and whisker plots comparing annual or
+                        monthly observational data with corresponding
+                        model outputs.
+e2e_compare_runs_bar    Create tornado bar-plots of the differences
+                        between two model runs.
+e2e_compare_runs_box    Box and whisker plots comparing annual or
+                        monthly outputs from single or Monte Carlo
+                        baseline and scenario model runs.
+e2e_copy                Make a copy of a named model/variant and
+                        documentation in a user defined workspace
+e2e_extract_hr          Extract the values of harvest ratios generated
+                        by the fleet model.
+e2e_extract_start       Extract the values of all the state variables
+                        at the end of a model run and format for use as
+                        new initial conditions.
+e2e_get_parmdoc         Get documentation on the parameters in the
+                        model.
+e2e_get_senscrit        Get documentation on the model outputs
+                        available as the basis for sensitivity
+                        analysis.
+e2e_info_md             List the available models in a designated
+                        workspace.
+e2e_info_pk             List the version mumber and details of the
+                        installed StrathE2E2 package.
+e2e_ls                  List the available models in a designated
+                        workspace.
+e2e_merge_sens_mc       Combine two or more sets of raw output data
+                        from parallel sensitivity or Monte Carlo
+                        analysis runs performed on separate
+                        machines/processors.
+e2e_optimize_act        Optimize StrathE2E fishing gear activity
+                        multipliers to maximumize the likelihood of
+                        either observed ecosystem target data or know
+                        harvest ratios.
+e2e_optimize_eco        Optimize StrathE2E ecology model parameters to
+                        maximise the likelihood of observed ecosystem
+                        target data.
+e2e_optimize_hr         Optimize StrathE2E harvest ratio multipliers to
+                        maximum the likelihood of observed ecosystem
+                        target data.
+e2e_plot_biomass        Plot showing the annual annual average biomass
+                        densities of each guild in the inshore and
+                        offshore zones, optionally with credible
+                        intervals.
+e2e_plot_catch          Plot the distribution and composition of annual
+                        catches across guild, zones and gears in the
+                        final year of a model run.
+e2e_plot_eco            Plot daily data on ecological outputs from the
+                        model over the final year of a run, optionally
+                        with credible intervals.
+e2e_plot_edrivers       Plot climatological year of environmental
+                        driving data.
+e2e_plot_fdrivers       Plot shaded-grid-cell diagrams of the
+                        distributions of fishing-related drivers across
+                        gears, guilds and seabed habitats.
+e2e_plot_migration      Plot daily data on migration fluxes by actively
+                        mobile guilds during the final year of a run,
+                        optionally with credible intervals.
+e2e_plot_opt_diagnostics
+                        Plot diagnostic data on the performance of
+                        parameter optimization functions.
+e2e_plot_sens_mc        Plot diagnostic data from sensitivity and Monte
+                        Carlo analyses.
+e2e_plot_trophic        Plot showing the annual mean trophic level
+                        index, and the omnivory index of each guild
+                        during the final year of a model run,
+                        optionally with credible intervals.
+e2e_plot_ts             Plot ecology model state variables or fishery
+                        catches for the full duration of a model run.
+e2e_plot_ycurve         Plot fishery yield curve data for planktivorous
+                        or demersal fish.
+e2e_process_sens_mc     Post-process already-created data from
+                        sensitivity or Monte Carlo analysis runs.
+e2e_read                Read all the configuration, driving and
+                        parameter files for a designated model and
+                        compile the data into a list object.
+e2e_run                 Run the StrathE2E model with a given
+                        configuration.
+e2e_run_mc              Run a Monte Carlo simulation with StrathE2E and
+                        derive centiles of credible values of model
+                        outputs.
+e2e_run_sens            Perform a parameter sensitivity analysis on the
+                        StrathE2E model.
+e2e_run_ycurve          Run a set of models to generate fishery yield
+                        curve data for either planktivorous or demersal
+                        fish.

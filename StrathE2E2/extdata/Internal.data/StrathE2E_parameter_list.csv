@@ -1,0 +1,461 @@
+parametername,parameterid,fixfit,Parameter.class,Parameter.description,Model.guild.or.feature
+thik_so,1,5,Physical configuration,Vertical thickness,Offshore zone upper layer
+thik_d,2,5,Physical configuration,Vertical thickness,Offshore zone lower layer
+thik_si,3,5,Physical configuration,Vertical thickness,Inshore zone
+thik_b,4,5,Physical configuration,Vertical thickness,Benthic boundary feeding layer
+porosity_s1,29,5,Physical configuration,Sediment porosity,Inshore muddy sediments
+porosity_s2,30,5,Physical configuration,Sediment porosity,Inshore sandy sediments
+porosity_s3,31,5,Physical configuration,Sediment porosity,Inshore coarse sediments
+porosity_d1,32,5,Physical configuration,Sediment porosity,Offshore muddy sediments
+porosity_d2,33,5,Physical configuration,Sediment porosity,Offshore sandy sediments
+porosity_d3,34,5,Physical configuration,Sediment porosity,Offshore coarse sediments
+sed_wat_dif_s1,35,5,Physical configuration,Hydraulic conductivity,Inshore muddy sediments
+sed_wat_dif_s2,36,5,Physical configuration,Hydraulic conductivity,Inshore sandy sediments
+sed_wat_dif_s3,37,5,Physical configuration,Hydraulic conductivity,Inshore coarse sediments
+sed_wat_dif_d1,38,5,Physical configuration,Hydraulic conductivity,Offshore muddy sediments
+sed_wat_dif_d2,39,5,Physical configuration,Hydraulic conductivity,Offshore sandy sediments
+sed_wat_dif_d3,40,5,Physical configuration,Hydraulic conductivity,Offshore coarse sediments
+sed_ref_Kxw,41,5,Physical configuration,Hydraulic conductivity,Reference value for sediment-dependent processes
+bioturb_depth_s1,42,5,Physical configuration,Bioturbation depth,Inshore muddy sediments
+bioturb_depth_s2,43,5,Physical configuration,Bioturbation depth,Inshore sandy sediments
+bioturb_depth_s3,44,5,Physical configuration,Bioturbation depth,Inshore coarse sediments
+bioturb_depth_d1,45,5,Physical configuration,Bioturbation depth,Offshore muddy sediments
+bioturb_depth_d2,46,5,Physical configuration,Bioturbation depth,Offshore sandy sediments
+bioturb_depth_d3,47,5,Physical configuration,Bioturbation depth,Offshore coarse sediments
+erosion_depth_s1,48,5,Physical configuration,Physical disturbance depth,Inshore muddy sediments
+erosion_depth_s2,49,5,Physical configuration,Physical disturbance depth,Inshore sandy sediments
+erosion_depth_s3,50,5,Physical configuration,Physical disturbance depth,Inshore coarse sediments
+erosion_depth_d1,51,5,Physical configuration,Physical disturbance depth,Offshore muddy sediments
+erosion_depth_d2,52,5,Physical configuration,Physical disturbance depth,Offshore sandy sediments
+erosion_depth_d3,53,5,Physical configuration,Physical disturbance depth,Offshore coarse sediments
+lightSPM_intercept,54,5,Physical configuration,Intercept,Light attenuation coefficient vs SPM
+lightSPM_slope,55,5,Physical configuration,Coefficient,Light attenuation coefficient vs SPM
+offshore_phyt_prop_depth,56,5,Physical configuration,Proportion of depth range occupied,Phytoplankton offshore
+inshore_phyt_prop_depth,57,5,Physical configuration,Proportion of depth range occupied,Phytoplankton inshore
+inshore_kelp_prop_depth,58,5,Physical configuration,Proportion of depth range occupied,Macrophytes inshore
+F_inshore_pelagic,59,3,Harvest ratio,Harvest ratio inshore,Planktivorous fish
+F_offshore_pelagic,60,3,Harvest ratio,Harvest ratio offshore,Planktivorous fish
+F_inshore_demersal,61,3,Harvest ratio,Harvest ratio inshore,Demersal fish
+F_offshore_demersal,62,3,Harvest ratio,Harvest ratio offshore,Demersal fish
+F_inshore_migratory,63,3,Harvest ratio,Harvest ratio inshore,Migratory fish
+F_offshore_migratory,64,3,Harvest ratio,Harvest ratio offshore,Migratory fish
+F_inshore_filtben,65,3,Harvest ratio,Harvest ratio inshore,Suspension/deposit feeding benthos
+F_offshore_filtben,66,3,Harvest ratio,Harvest ratio offshore,Suspension/deposit feeding benthos
+F_inshore_carnben,67,3,Harvest ratio,Harvest ratio inshore,Carnivore/scavenge feeding benthos
+F_offshore_carnben,68,3,Harvest ratio,Harvest ratio offshore,Carnivore/scavenge feeding benthos
+F_inshore_carnzoo,69,3,Harvest ratio,Harvest ratio inshore,Carnivorous zooplankton
+F_offshore_carnzoo,70,3,Harvest ratio,Harvest ratio offshore,Carnivorous zooplankton
+F_inshore_bird,71,3,Harvest ratio,Harvest ratio inshore,Birds
+F_offshore_bird,72,3,Harvest ratio,Harvest ratio offshore,Birds
+F_inshore_seal,73,3,Harvest ratio,Harvest ratio inshore,Pinnipeds
+F_offshore_seal,74,3,Harvest ratio,Harvest ratio offshore,Pinnipeds
+F_inshore_ceta,75,3,Harvest ratio,Harvest ratio inshore,Cetaceans
+F_offshore_ceta,76,3,Harvest ratio,Harvest ratio offshore,Cetaceans
+F_inshore_kelp,77,3,Harvest ratio,Harvest ratio inshore,Macrophytes
+F_offshore_kelp,78,3,Harvest ratio,Harvest ratio offshore,Macrophytes
+QnQ_coef,79,2,Fishing fleet model,Coefficient,Demersal fish non-quota proportion in catch vs nitrogen mass
+QnQ_exp,80,2,Fishing fleet model,Exponent,Demersal fish non-quota proportion in catch vs nitrogen mass
+NQus_coef,81,2,Fishing fleet model,Coefficient,Demersal fish non-quota undersize vs nitrogen mass
+NQus_exp,82,2,Fishing fleet model,Exponent,Demersal fish non-quota undersize vs nitrogen mass
+QLus_coef,83,2,Fishing fleet model,Coefficient,Demersal fish quota-limited undersize vs nitrogen mass
+QLus_exp,84,2,Fishing fleet model,Exponent,Demersal fish quota-limited undersize vs nitrogen mass
+D_inshore_pelagic,85,2,Fishing fleet model,Discard rate inshore,Planktivorous fish
+D_offshore_pelagic,86,2,Fishing fleet model,Discard rate offshore,Planktivorous fish
+D_inshore_demersal,87,2,Fishing fleet model,Discard rate inshore,Demersal fish
+D_offshore_demersal,88,2,Fishing fleet model,Discard rate offshore,Demersal fish
+D_demersal,89,2,Fishing fleet model,Discard rate all areas,Demersal fish all areas
+D_inshore_migratory,90,2,Fishing fleet model,Discard rate inshore,Migratory fish
+D_offshore_migratory,91,2,Fishing fleet model,Discard rate offshore,Migratory fish
+D_inshore_filtben,92,2,Fishing fleet model,Discard rate inshore,Suspension/deposit feeding benthos
+D_offshore_filtben,93,2,Fishing fleet model,Discard rate offshore,Suspension/deposit feeding benthos
+D_inshore_carnben,94,2,Fishing fleet model,Discard rate inshore,Carnivore/scavenge feeding benthos
+D_offshore_carnben,95,2,Fishing fleet model,Discard rate offshore,Carnivore/scavenge feeding benthos
+D_inshore_carnzoo,96,2,Fishing fleet model,Discard rate inshore,Carnivorous zooplankton
+D_offshore_carnzoo,97,2,Fishing fleet model,Discard rate offshore,Carnivorous zooplankton
+D_inshore_bird,98,2,Fishing fleet model,Discard rate inshore,Birds
+D_offshore_bird,99,2,Fishing fleet model,Discard rate offshore,Birds
+D_inshore_seal,100,2,Fishing fleet model,Discard rate inshore,Pinnipeds
+D_offshore_seal,101,2,Fishing fleet model,Discard rate offshore,Pinnipeds
+D_inshore_ceta,102,2,Fishing fleet model,Discard rate inshore,Cetaceans
+D_offshore_ceta,103,2,Fishing fleet model,Discard rate offshore,Cetaceans
+D_inshore_kelp,104,2,Fishing fleet model,Discard rate inshore,Macrophytes
+D_offshore_kelp,105,2,Fishing fleet model,Discard rate offshore,Macrophytes
+G_inshore_pelagic,106,2,Fishing fleet model,Processing at sea rate inshore,Planktivorous fish
+G_offshore_pelagic,107,2,Fishing fleet model,Processing at sea rate offshore,Planktivorous fish
+G_inshore_demersal,108,2,Fishing fleet model,Processing at sea rate inshore,Demersal fish
+G_offshore_demersal,109,2,Fishing fleet model,Processing at sea rate offshore,Demersal fish
+G_inshore_migratory,110,2,Fishing fleet model,Processing at sea rate inshore,Migratory fish
+G_offshore_migratory,111,2,Fishing fleet model,Processing at sea rate offshore,Migratory fish
+G_inshore_filtben,112,2,Fishing fleet model,Processing at sea rate inshore,Suspension/deposit feeding benthos
+G_offshore_filtben,113,2,Fishing fleet model,Processing at sea rate offshore,Suspension/deposit feeding benthos
+G_inshore_carnben,114,2,Fishing fleet model,Processing at sea rate inshore,Carnivore/scavenge feeding benthos
+G_offshore_carnben,115,2,Fishing fleet model,Processing at sea rate offshore,Carnivore/scavenge feeding benthos
+G_inshore_carnzoo,116,2,Fishing fleet model,Processing at sea rate inshore,Carnivorous zooplankton
+G_offshore_carnzoo,117,2,Fishing fleet model,Processing at sea rate offshore,Carnivorous zooplankton
+G_inshore_bird,118,2,Fishing fleet model,Processing at sea rate inshore,Birds
+G_offshore_bird,119,2,Fishing fleet model,Processing at sea rate offshore,Birds
+G_inshore_seal,120,2,Fishing fleet model,Processing at sea rate inshore,Pinnipeds
+G_offshore_seal,121,2,Fishing fleet model,Processing at sea rate offshore,Pinnipeds
+G_inshore_ceta,122,2,Fishing fleet model,Processing at sea rate inshore,Cetaceans
+G_offshore_ceta,123,2,Fishing fleet model,Processing at sea rate offshore,Cetaceans
+G_inshore_kelp,124,2,Fishing fleet model,Processing at sea rate inshore,Macrophytes
+G_offshore_kelp,125,2,Fishing fleet model,Processing at sea rate offshore,Macrophytes
+ploughdaily_s0,308,2,Fishing fleet model,Abrasion rate by fishing gears,Inshore rock
+ploughdaily_s1,309,2,Fishing fleet model,Abrasion rate by fishing gears,Inshore muddy sediments
+ploughdaily_s2,310,2,Fishing fleet model,Abrasion rate by fishing gears,Inshore sandy sediments
+ploughdaily_s3,311,2,Fishing fleet model,Abrasion rate by fishing gears,Inshore coarse sediments
+ploughdaily_d0,312,2,Fishing fleet model,Abrasion rate by fishing gears,Offshore rock
+ploughdaily_d1,313,2,Fishing fleet model,Abrasion rate by fishing gears,Offshore muddy sediments
+ploughdaily_d2,314,2,Fishing fleet model,Abrasion rate by fishing gears,Offshore sandy sediments
+ploughdaily_d3,315,2,Fishing fleet model,Abrasion rate by fishing gears,Offshore coarse sediments
+ploughdaily_DO,316,2,Fishing fleet model,Abrasion rate by fishing gears,Offshore deep ocean
+inshore_bensdamage,317,2,Fishing fleet model,Damage mortality rate by fishing gears,Suspension/deposit feeding benthos inshore
+offshore_bensdamage,318,2,Fishing fleet model,Damage mortality rate by fishing gears,Suspension/deposit feeding benthos offshore
+inshore_bencdamage,319,2,Fishing fleet model,Damage mortality rate by fishing gears,Carnivore/scavenge feeding benthos inshore
+offshore_bencdamage,320,2,Fishing fleet model,Damage mortality rate by fishing gears,Carnivore/scavenge feeding benthos offshore
+offal_prop_live_weight,321,2,Fishing fleet model,Offal as proportion of live weight,All guilds
+ploughdepth_s0,322,2,Fishing fleet model,Penetration depth by fishing gears,Inshore rock
+ploughdepth_s1,323,2,Fishing fleet model,Penetration depth by fishing gears,Inshore muddy sediments
+ploughdepth_s2,324,2,Fishing fleet model,Penetration depth by fishing gears,Inshore sandy sediments
+ploughdepth_s3,325,2,Fishing fleet model,Penetration depth by fishing gears,Inshore coarse sediments
+ploughdepth_d0,326,2,Fishing fleet model,Penetration depth by fishing gears,Offshore rock
+ploughdepth_d1,327,2,Fishing fleet model,Penetration depth by fishing gears,Offshore muddy sediments
+ploughdepth_d2,328,2,Fishing fleet model,Penetration depth by fishing gears,Offshore sandy sediments
+ploughdepth_d3,329,2,Fishing fleet model,Penetration depth by fishing gears,Offshore coarse sediments
+ploughdepth_DO,330,2,Fishing fleet model,Penetration depth by fishing gears,Offshore deep ocean
+qtena,331,1,Ecology model fixed,Q10,Autotrophic uptake
+qtenh,332,1,Ecology model fixed,Q10,Heterotrophic uptake
+qtenm,333,1,Ecology model fixed,Q10,Metabolism and microbial rates
+qtenr,334,1,Ecology model fixed,Q10 reference temperature,All temperature dependent processes
+Lmaxup_phyt,335,1,Ecology model fixed,Saturation light intensity for uptake,Nutrient by phytoplankton
+Lmaxup_kelp,336,1,Ecology model fixed,Saturation light intensity for uptake,Nutrient by macrophytes
+NCmax_kelp,337,1,Ecology model fixed,N:C molar ratio maximum,Macrophytes
+NCmin_kelp,338,1,Ecology model fixed,N:C molar ratio minimum,Macrophytes
+wave_beach_kelpdebris,339,0,Ecology model fitted,Conversion rate,Macrophyte debris to beach-cast
+umaxC_kelp,340,0,Ecology model fitted,Maximum uptake rate,Carbon by macrophytes
+exudeC_kelp,341,0,Ecology model fitted,Carbon exudation rate,Macrophytes
+selfshade_kelp,342,0,Ecology model fitted,Coefficient,Macrophyte self shading
+uNIT_kelpt,343,0,Ecology model fitted,Maximum uptake rate,Nitrate by macrophytes
+hsNIT_kelp,344,0,Ecology model fitted,Uptake half saturation coefficient,Nitrate by macrophytes
+uAMM_kelpt,345,0,Ecology model fitted,Maximum uptake rate,Ammonia by macrophytes
+hsAMM_kelp,346,0,Ecology model fitted,Uptake half saturation coefficient,Ammonia by macrophytes
+uNIT_phytt,347,0,Ecology model fitted,Maximum uptake rate,Nitrate by phytoplankton
+hsNIT_phyt,348,0,Ecology model fitted,Uptake half saturation coefficient,Nitrate by phytoplankton
+uAMM_phytt,349,0,Ecology model fitted,Maximum uptake rate,Ammonia by phytoplankton
+hsAMM_phyt,350,0,Ecology model fitted,Uptake half saturation coefficient,Ammonia by phytoplankton
+uphyt_omnit,351,0,Ecology model fitted,Maximum uptake rate,Phytoplankton by omnivorous zooplankton
+hsphyt_omni,352,0,Ecology model fitted,Uptake half saturation coefficient,Phytoplankton by omnivorous zooplankton
+udet_omnit,353,0,Ecology model fitted,Maximum uptake rate,Suspended detritus by omnivorous zooplankton
+hsdet_omni,354,0,Ecology model fitted,Uptake half saturation coefficient,Suspended detritus by omnivorous zooplankton
+ubenthslar_omnit,355,0,Ecology model fitted,Maximum uptake rate,Suspension/deposit feeding benthos larvae by omnivorous zooplankton
+hsbenthslar_omni,356,0,Ecology model fitted,Uptake half saturation coefficient,Suspension/deposit feeding benthos larvae by omnivorous zooplankton
+ubenthclar_omnit,357,0,Ecology model fitted,Maximum uptake rate,Carnivore/scavenge feeding benthos larvae by omnivorous zooplankton
+hsbenthclar_omni,358,0,Ecology model fitted,Uptake half saturation coefficient,Carnivore/scavenge feeding benthos larvae by omnivorous zooplankton
+uomni_carnt,359,0,Ecology model fitted,Maximum uptake rate,Omnivorous zooplankton by carnivorous zooplankton
+hsomni_carn,360,0,Ecology model fitted,Uptake half saturation coefficient,Omnivorous zooplankton by carnivorous zooplankton
+ubenthslar_carnt,361,0,Ecology model fitted,Maximum uptake rate,Suspension/deposit feeding benthos larvae by carnivorous zooplankton
+hsbenthslar_carn,362,0,Ecology model fitted,Uptake half saturation coefficient,Suspension/deposit feeding benthos larvae by carnivorous zooplankton
+ubenthclar_carnt,363,0,Ecology model fitted,Maximum uptake rate,Carnivore/scavenge feeding benthos larvae by carnivorous zooplankton
+hsbenthclar_carn,364,0,Ecology model fitted,Uptake half saturation coefficient,Carnivore/scavenge feeding benthos larvae by carnivorous zooplankton
+ufishplar_carnt,365,0,Ecology model fitted,Maximum uptake rate,Planktivorous fish larvae by carnivorous zooplankton
+hsfishplar_carn,366,0,Ecology model fitted,Uptake half saturation coefficient,Planktivorous fish larvae by carnivorous zooplankton
+ufishdlar_carnt,367,0,Ecology model fitted,Maximum uptake rate,Demersal fish larvae by carnivorous zooplankton
+hsfishdlar_carn,368,0,Ecology model fitted,Uptake half saturation coefficient,Demersal fish larvae by carnivorous zooplankton
+uomni_fishplart,369,0,Ecology model fitted,Maximum uptake rate,Omnivorous zooplankton by planktivorous fish larvae
+hsomni_fishplar,370,0,Ecology model fitted,Uptake half saturation coefficient,Omnivorous zooplankton by planktivorous fish larvae
+ubenthslar_fishplart,371,0,Ecology model fitted,Maximum uptake rate,Suspension/deposit feeding benthos larvae by planktivorous fish larvae
+hsbenthslar_fishplar,372,0,Ecology model fitted,Uptake half saturation coefficient,Suspension/deposit feeding benthos larvae by planktivorous fish larvae
+ubenthclar_fishplart,373,0,Ecology model fitted,Maximum uptake rate,Carnivore/scavenge feeding benthos larvae by planktivorous fish larvae
+hsbenthclar_fishplar,374,0,Ecology model fitted,Uptake half saturation coefficient,Carnivore/scavenge feeding benthos larvae by planktivorous fish larvae
+uomni_fishpt,375,0,Ecology model fitted,Maximum uptake rate,Omnivorous zooplankton by planktivorous fish
+hsomni_fishp,376,0,Ecology model fitted,Uptake half saturation coefficient,Omnivorous zooplankton by planktivorous fish
+ucarn_fishpt,377,0,Ecology model fitted,Maximum uptake rate,Carnivorous zooplankton by planktivorous fish
+hscarn_fishp,378,0,Ecology model fitted,Uptake half saturation coefficient,Carnivorous zooplankton by planktivorous fish
+ubenthslar_fishpt,379,0,Ecology model fitted,Maximum uptake rate,Suspension/deposit feeding benthos larvae by planktivorous fish
+hsbenthslar_fishp,380,0,Ecology model fitted,Uptake half saturation coefficient,Suspension/deposit feeding benthos larvae by planktivorous fish
+ubenthclar_fishpt,381,0,Ecology model fitted,Maximum uptake rate,Carnivore/scavenge feeding benthos larvae by planktivorous fish
+hsbenthclar_fishp,382,0,Ecology model fitted,Uptake half saturation coefficient,Carnivore/scavenge feeding benthos larvae by planktivorous fish
+ufishdlar_fishpt,383,0,Ecology model fitted,Maximum uptake rate,Demersal fish larvae by planktivorous fish
+hsfishdlar_fishp,384,0,Ecology model fitted,Uptake half saturation coefficient,Demersal fish larvae by planktivorous fish
+ufishplar_fishpt,385,0,Ecology model fitted,Maximum uptake rate,Planktivorous fish larvae by planktivorous fish
+hsfishplar_fishp,386,0,Ecology model fitted,Uptake half saturation coefficient,Planktivorous fish larvae by planktivorous fish
+uomni_fishmt,387,0,Ecology model fitted,Maximum uptake rate,Omnivorous zooplankton by migratory fish
+hsomni_fishm,388,0,Ecology model fitted,Uptake half saturation coefficient,Omnivorous zooplankton by migratory fish
+ucarn_fishmt,389,0,Ecology model fitted,Maximum uptake rate,Carnivorous zooplankton by migratory fish
+hscarn_fishm,390,0,Ecology model fitted,Uptake half saturation coefficient,Carnivorous zooplankton by migratory fish
+ubenthslar_fishmt,391,0,Ecology model fitted,Maximum uptake rate,Suspension/deposit feeding benthos larvae by migratory fish
+hsbenthslar_fishm,392,0,Ecology model fitted,Uptake half saturation coefficient,Suspension/deposit feeding benthos larvae by migratory fish
+ubenthclar_fishmt,393,0,Ecology model fitted,Maximum uptake rate,Carnivore/scavenge feeding benthos larvae by migratory fish
+hsbenthclar_fishm,394,0,Ecology model fitted,Uptake half saturation coefficient,Carnivore/scavenge feeding benthos larvae by migratory fish
+ufishdlar_fishmt,395,0,Ecology model fitted,Maximum uptake rate,Demersal fish larvae by migratory fish
+hsfishdlar_fishm,396,0,Ecology model fitted,Uptake half saturation coefficient,Demersal fish larvae by migratory fish
+ufishplar_fishmt,397,0,Ecology model fitted,Maximum uptake rate,Planktivorous fish larvae by migratory fish
+hsfishplar_fishm,398,0,Ecology model fitted,Uptake half saturation coefficient,Planktivorous fish larvae by migratory fish
+uomni_fishdlart,399,0,Ecology model fitted,Maximum uptake rate,Omnivorous zooplankton by demersal fish larvae
+hsomni_fishdlar,400,0,Ecology model fitted,Uptake half saturation coefficient,Omnivorous zooplankton by demersal fish larvae
+ubenthslar_fishdlart,401,0,Ecology model fitted,Maximum uptake rate,Suspension/deposit feeding benthos larvae by demersal fish larvae
+hsbenthslar_fishdlar,402,0,Ecology model fitted,Uptake half saturation coefficient,Suspension/deposit feeding benthos larvae by demersal fish larvae
+ubenthclar_fishdlart,403,0,Ecology model fitted,Maximum uptake rate,Carnivore/scavenge feeding benthos larvae by demersal fish larvae
+hsbenthclar_fishdlar,404,0,Ecology model fitted,Uptake half saturation coefficient,Carnivore/scavenge feeding benthos larvae by demersal fish larvae
+ucarn_fishdt,405,0,Ecology model fitted,Maximum uptake rate,Carnivorous zooplankton by demersal fish
+hscarn_fishd,406,0,Ecology model fitted,Uptake half saturation coefficient,Carnivorous zooplankton by demersal fish
+ubenths_fishdt,407,0,Ecology model fitted,Maximum uptake rate,Suspension/deposit feeding benthos by demersal fish
+hsbenths_fishd,408,0,Ecology model fitted,Uptake half saturation coefficient,Suspension/deposit feeding benthos by demersal fish
+ubenthc_fishdt,409,0,Ecology model fitted,Maximum uptake rate,Carnivore/scavenge feeding benthos by demersal fish
+hsbenthc_fishd,410,0,Ecology model fitted,Uptake half saturation coefficient,Carnivore/scavenge feeding benthos by demersal fish
+ufishplar_fishdt,411,0,Ecology model fitted,Maximum uptake rate,Planktivorous fish larvae by demersal fish
+hsfishplar_fishd,412,0,Ecology model fitted,Uptake half saturation coefficient,Planktivorous fish larvae by demersal fish
+ufishdlar_fishdt,413,0,Ecology model fitted,Maximum uptake rate,demersal fish larvae by demersal fish
+hsfishdlar_fishd,414,0,Ecology model fitted,Uptake half saturation coefficient,demersal fish larvae by demersal fish
+ufishp_fishdt,415,0,Ecology model fitted,Maximum uptake rate,Planktivorous fish by demersal fish
+hsfishp_fishd,416,0,Ecology model fitted,Uptake half saturation coefficient,Planktivorous fish by demersal fish
+ufishm_fishdt,417,0,Ecology model fitted,Maximum uptake rate,Migratory fish by demersal fish
+hsfishm_fishd,418,0,Ecology model fitted,Uptake half saturation coefficient,Migratory fish by demersal fish
+ufishd_fishdt,419,0,Ecology model fitted,Maximum uptake rate,Demersal fish by demersal fish
+hsfishd_fishd,420,0,Ecology model fitted,Uptake half saturation coefficient,Demersal fish by demersal fish
+udisc_fishdt,421,0,Ecology model fitted,Maximum uptake rate,Discards by demersal fish
+hsdisc_fishd,422,0,Ecology model fitted,Uptake half saturation coefficient,Discards by demersal fish
+ucorp_fishdt,423,0,Ecology model fitted,Maximum uptake rate,Corpses by demersal fish
+hscorp_fishd,424,0,Ecology model fitted,Uptake half saturation coefficient,Corpses by demersal fish
+uphyt_benthslart,425,0,Ecology model fitted,Maximum uptake rate,Phytoplankton by suspension/deposit feeding benthos larvae
+hsphyt_benthslar,426,0,Ecology model fitted,Uptake half saturation coefficient,Phytoplankton by suspension/deposit feeding benthos larvae
+udet_benthslart,427,0,Ecology model fitted,Maximum uptake rate,Suspended detritus by suspension/deposit feeding benthos larvae
+hsdet_benthslar,428,0,Ecology model fitted,Uptake half saturation coefficient,Suspended detritus by suspension/deposit feeding benthos larvae
+uphyt_benthclart,429,0,Ecology model fitted,Maximum uptake rate,Phytoplankton by carnivore/scavenge feeding benthos larvae
+hsphyt_benthclar,430,0,Ecology model fitted,Uptake half saturation coefficient,Phytoplankton by carnivore/scavenge feeding benthos larvae
+udet_benthclart,431,0,Ecology model fitted,Maximum uptake rate,Suspended detritus by carnivore/scavenge feeding benthos larvae
+hsdet_benthclar,432,0,Ecology model fitted,Uptake half saturation coefficient,Suspended detritus by carnivore/scavenge feeding benthos larvae
+uphyt_benthst,433,0,Ecology model fitted,Maximum uptake rate,Phytoplankton by suspension/deposit feeding benthos
+hsphyt_benths,434,0,Ecology model fitted,Uptake half saturation coefficient,Phytoplankton by suspension/deposit feeding benthos
+udet_benthst,435,0,Ecology model fitted,Maximum uptake rate,Suspended detritus by suspension/deposit feeding benthos
+hsdet_benths,436,0,Ecology model fitted,Uptake half saturation coefficient,Suspended detritus by suspension/deposit feeding benthos
+used_benthst,437,0,Ecology model fitted,Maximum uptake rate,Sediment detritus by suspension/deposit feeding benthos
+hssed_benths,438,0,Ecology model fitted,Uptake half saturation coefficient,Sediment detritus by suspension/deposit feeding benthos
+ubenths_benthct,439,0,Ecology model fitted,Maximum uptake rate,Suspension/deposit feeding benthos by carnivore/scavenge feeding benthos
+hsbenths_benthc,440,0,Ecology model fitted,Uptake half saturation coefficient,Suspension/deposit feeding benthos by carnivore/scavenge feeding benthos
+ukelp_benthct,441,0,Ecology model fitted,Maximum uptake rate,Macrophytes by carnivorous/scavenge feeding benthos
+hskelp_benthc,442,0,Ecology model fitted,Uptake half saturation coefficient,Macrophytes by carnivorous/scavenge feeding benthos
+ukelpdebris_benthct,443,0,Ecology model fitted,Maximum uptake rate,Macrophyte debris by carnivorous/scavenge feeding benthos
+hskelpdebris_benthc,444,0,Ecology model fitted,Uptake half saturation coefficient,Macrophyte debris by carnivorous/scavenge feeding benthos
+ucorp_benthct,445,0,Ecology model fitted,Maximum uptake rate,Corpses by carnivore/scavenge feeding benthos
+hscorp_benthc,446,0,Ecology model fitted,Uptake half saturation coefficient,Corpses by carnivore/scavenge feeding benthos
+ucarn_bird,447,0,Ecology model fitted,Maximum uptake rate,Carnivorous zooplankton by birds
+hscarn_bird,448,0,Ecology model fitted,Uptake half saturation coefficient,Carnivorous zooplankton by birds&mammala
+ubenths_bird,449,0,Ecology model fitted,Maximum uptake rate,Suspension/deposit feeding benthos by birds
+hsbenths_bird,450,0,Ecology model fitted,Uptake half saturation coefficient,Suspension/deposit feeding benthos by birds
+ubenthc_bird,451,0,Ecology model fitted,Maximum uptake rate,Carnivore/scavenge feeding benthos by birds
+hsbenthc_bird,452,0,Ecology model fitted,Uptake half saturation coefficient,Carnivore/scavenge feeding benthos by birds
+ufishp_bird,453,0,Ecology model fitted,Maximum uptake rate,Planktivorous fish by birds
+hsfishp_bird,454,0,Ecology model fitted,Uptake half saturation coefficient,Planktivorous fish by birds
+ufishm_bird,455,0,Ecology model fitted,Maximum uptake rate,Migratory fish by birds
+hsfishm_bird,456,0,Ecology model fitted,Uptake half saturation coefficient,Migratory fish by birds
+ufishd_bird,457,0,Ecology model fitted,Maximum uptake rate,Demersal fish by birds
+hsfishd_bird,458,0,Ecology model fitted,Uptake half saturation coefficient,Demersal fish by birds
+udisc_bird,459,0,Ecology model fitted,Maximum uptake rate,Discards by birds
+hsdisc_bird,460,0,Ecology model fitted,Uptake half saturation coefficient,Discards by birds
+ucorp_bird,461,0,Ecology model fitted,Maximum uptake rate,Corpses by birds
+hscorp_bird,462,0,Ecology model fitted,Uptake half saturation coefficient,Corpses by birds
+bdapar_bird,463,0,Ecology model fitted,Bedding DeAngelis parameter,Birds
+ucarn_seal,464,0,Ecology model fitted,Maximum uptake rate,Carnivorous zooplankton by pinnipeds
+hscarn_seal,465,0,Ecology model fitted,Uptake half saturation coefficient,Carnivorous zooplankton by pinnipeds
+ubenths_seal,466,0,Ecology model fitted,Maximum uptake rate,Suspension/deposit feeding benthos by pinnipeds
+hsbenths_seal,467,0,Ecology model fitted,Uptake half saturation coefficient,Suspension/deposit feeding benthos by pinnipeds
+ubenthc_seal,468,0,Ecology model fitted,Maximum uptake rate,Carnivore/scavenge feeding benthos by pinnipeds
+hsbenthc_seal,469,0,Ecology model fitted,Uptake half saturation coefficient,Carnivore/scavenge feeding benthos by pinnipeds
+ufishp_seal,470,0,Ecology model fitted,Maximum uptake rate,Planktivorous fish by pinnipeds
+hsfishp_seal,471,0,Ecology model fitted,Uptake half saturation coefficient,Planktivorous fish by pinnipeds
+ufishm_seal,472,0,Ecology model fitted,Maximum uptake rate,Migratory fish by pinnipeds
+hsfishm_seal,473,0,Ecology model fitted,Uptake half saturation coefficient,Migratory fish by pinnipeds
+ufishd_seal,474,0,Ecology model fitted,Maximum uptake rate,Demersal fish by pinnipeds
+hsfishd_seal,475,0,Ecology model fitted,Uptake half saturation coefficient,Demersal fish by pinnipeds
+ubird_seal,476,0,Ecology model fitted,Maximum uptake rate,Birds by pinnipeds
+hsbird_seal,477,0,Ecology model fitted,Uptake half saturation coefficient,Birds by pinnipeds
+udisc_seal,478,0,Ecology model fitted,Maximum uptake rate,Discards by pinnipeds
+hsdisc_seal,479,0,Ecology model fitted,Uptake half saturation coefficient,Discards by pinnipeds
+ucorp_seal,480,0,Ecology model fitted,Maximum uptake rate,Corpses by pinnipeds
+hscorp_seal,481,0,Ecology model fitted,Uptake half saturation coefficient,Corpses by pinnipeds
+bdapar_seal,482,0,Ecology model fitted,Bedding DeAngelis parameter,Pinnipeds
+uomni_ceta,483,0,Ecology model fitted,Maximum uptake rate,Omnivorous zooplankton by cetaceans
+hsomni_ceta,484,0,Ecology model fitted,Uptake half saturation coefficient,Omnivorous zooplankton by cetaceans
+ucarn_ceta,485,0,Ecology model fitted,Maximum uptake rate,Carnivorous zooplankton by cetaceans
+hscarn_ceta,486,0,Ecology model fitted,Uptake half saturation coefficient,Carnivorous zooplankton by cetaceans
+ubenths_ceta,487,0,Ecology model fitted,Maximum uptake rate,Suspension/deposit feeding benthos by cetaceans
+hsbenths_ceta,488,0,Ecology model fitted,Uptake half saturation coefficient,Suspension/deposit feeding benthos by cetaceans
+ubenthc_ceta,489,0,Ecology model fitted,Maximum uptake rate,Carnivore/scavenge feeding benthos by cetaceans
+hsbenthc_ceta,490,0,Ecology model fitted,Uptake half saturation coefficient,Carnivore/scavenge feeding benthos by cetaceans
+ufishp_ceta,491,0,Ecology model fitted,Maximum uptake rate,Planktivorous fish by cetaceans
+hsfishp_ceta,492,0,Ecology model fitted,Uptake half saturation coefficient,Planktivorous fish by cetaceans
+ufishm_ceta,493,0,Ecology model fitted,Maximum uptake rate,Migratory fish by cetaceans
+hsfishm_ceta,494,0,Ecology model fitted,Uptake half saturation coefficient,Migratory fish by cetaceans
+ufishd_ceta,495,0,Ecology model fitted,Maximum uptake rate,Demersal fish by cetaceans
+hsfishd_ceta,496,0,Ecology model fitted,Uptake half saturation coefficient,Demersal fish by cetaceans
+ubird_ceta,497,0,Ecology model fitted,Maximum uptake rate,Birds by cetaceans
+hsbird_ceta,498,0,Ecology model fitted,Uptake half saturation coefficient,Birds by cetaceans
+useal_ceta,499,0,Ecology model fitted,Maximum uptake rate,Pinnipeds by cetaceans
+hsseal_ceta,500,0,Ecology model fitted,Uptake half saturation coefficient,Pinnipeds by cetaceans
+udisc_ceta,501,0,Ecology model fitted,Maximum uptake rate,Discards by cetaceans
+hsdisc_ceta,502,0,Ecology model fitted,Uptake half saturation coefficient,Discards by cetaceans
+bdapar_ceta,503,0,Ecology model fitted,Bedding DeAngelis parameter,Cetaceans
+aH,504,1,Ecology model fixed,Assimilation efficiency,Omnivorous zooplankton
+aC,505,1,Ecology model fixed,Assimilation efficiency,Carnivorous zooplankton
+aBslar,506,1,Ecology model fixed,Assimilation efficiency,Suspension/deposit feeding benthos larvae
+aBclar,507,1,Ecology model fixed,Assimilation efficiency,Carnivore/scavenge feeding benthos larvae
+aBs,508,1,Ecology model fixed,Assimilation efficiency,Suspension/deposit feeding benthos
+aBc,509,1,Ecology model fixed,Assimilation efficiency,Carnivore/scavenge feeding benthos
+aFplar,510,1,Ecology model fixed,Assimilation efficiency,Planktivorous fish larvae
+aFdlar,511,1,Ecology model fixed,Assimilation efficiency,Demersal fish larvae
+aFp,512,1,Ecology model fixed,Assimilation efficiency,Planktivorous fish
+aFm,513,1,Ecology model fixed,Assimilation efficiency,Migratory fish
+aFd,514,1,Ecology model fixed,Assimilation efficiency,Demersal fish
+abird,515,1,Ecology model fixed,Assimilation efficiency,Birds
+aseal,516,1,Ecology model fixed,Assimilation efficiency,Pinnipeds
+aceta,517,1,Ecology model fixed,Assimilation efficiency,Cetaceans
+eHt,518,1,Ecology model fixed,Background metabolic rate coefficient,Omnivorous zooplankton
+eCt,519,1,Ecology model fixed,Background metabolic rate coefficient,Carnivorous zooplankton
+eBslart,520,1,Ecology model fixed,Background metabolic rate coefficient,Suspension/deposit feeding benthos larvae
+eBclart,521,1,Ecology model fixed,Background metabolic rate coefficient,Carnivore/scavenge feeding benthos larvae
+eBst,522,1,Ecology model fixed,Background metabolic rate coefficient,Suspension/deposit feeding benthos
+eBct,523,1,Ecology model fixed,Background metabolic rate coefficient,Carnivore/scavenge feeding benthos
+eFplart,524,1,Ecology model fixed,Background metabolic rate coefficient,Planktivorous fish larvae
+eFdlart,525,1,Ecology model fixed,Background metabolic rate coefficient,Demersal fish larvae
+eFpt,526,1,Ecology model fixed,Background metabolic rate coefficient,Planktivorous fish
+eFmt,527,1,Ecology model fixed,Background metabolic rate coefficient,Migratory fish
+eFdt,528,1,Ecology model fixed,Background metabolic rate coefficient,Demersal fish
+ebirdt,529,1,Ecology model fixed,Background metabolic rate coefficient,Birds
+esealt,530,1,Ecology model fixed,Background metabolic rate coefficient,Pinnipeds
+ecetat,531,1,Ecology model fixed,Background metabolic rate coefficient,Cetaceans
+mt,532,0,Ecology model fitted,Mineralisation rate coefficient,Suspended detritus
+nst,533,0,Ecology model fitted,Nitrification rate coefficient,Upper layer ammonia
+dst,534,0,Ecology model fitted,Denitrification rate coefficient,Upper layer nitrate
+ndt,535,0,Ecology model fitted,Nitrification rate coefficient,Lower layer ammonia
+ddt,536,0,Ecology model fitted,Denitrification rate coefficient,Lower layer nitrate
+qs_p1,537,0,Ecology model fitted,Conversion rate coefficient,Labile to refractory sediment detritus
+qs_p2,538,0,Ecology model fitted,Mineralistation rate scaling parameter,Refractory sediment detritus
+qs_p3,539,0,Ecology model fitted,Remobilisation parameter,Refractory to labile sediment detritus
+msedt,540,0,Ecology model fitted,Mineralisation rate coefficient,Labile sediment detritus
+msens,541,0,Ecology model fitted,Mineralisation rate sensitivity to grain size,Labile sediment detritus
+nsedt,542,0,Ecology model fitted,Nitrification rate coefficient,Sediment porewater ammonia
+nsens,543,0,Ecology model fitted,Nitrification rate sensitivity to grain size,Sediment porewater ammonia
+dsedt,544,0,Ecology model fitted,Denitrification rate coefficient,Sediment porewater nitrate
+dsens,545,0,Ecology model fitted,Denitrification rate sensitivity to grain size,Sediment porewater nitrate
+xwave_kelp,546,0,Ecology model fitted,Wave height dependent conversion rate,Macrophytes to macrophyte debris
+xst,547,0,Ecology model fitted,Density dependent mortality coefficient,Phytoplankton upper layer
+xdt,548,0,Ecology model fitted,Density dependent mortality coefficient,Phytoplankton lower layer
+xomni,549,0,Ecology model fitted,Density dependent mortality coefficient,Omnivorous zooplankton
+xcarn,550,0,Ecology model fitted,Density dependent mortality coefficient,Carnivorous zooplankton
+xbenthslar,551,0,Ecology model fitted,Density dependent mortality coefficient,Suspension/deposit feeding benthos larvae
+xbenthclar,552,0,Ecology model fitted,Density dependent mortality coefficient,Carnivore/scavenge feeding benthos larvae
+xbenths,553,0,Ecology model fitted,Density dependent mortality coefficient,Suspension/deposit feeding benthos
+xbenthc,554,0,Ecology model fitted,Density dependent mortality coefficient,Carnivore/scavenge feeding benthos
+xpfishlar,555,0,Ecology model fitted,Density dependent mortality coefficient,Planktivorous fish larvae
+xdfishlar,556,0,Ecology model fitted,Density dependent mortality coefficient,Demersal fish larvae
+xpfish,557,0,Ecology model fitted,Density dependent mortality coefficient,Planktivorous fish
+xmfish,558,0,Ecology model fitted,Density dependent mortality coefficient,Migratory fish
+xdfish,559,0,Ecology model fitted,Density dependent mortality coefficient,Demersal fish
+xbird,560,0,Ecology model fitted,Density dependent mortality coefficient,Birds
+xseal,561,0,Ecology model fitted,Density dependent mortality coefficient,Pinnipeds
+xceta,562,0,Ecology model fitted,Density dependent mortality coefficient,Cetaceans
+kelpdebris_det,563,0,Ecology model fitted,Disintigration rate,Macrophyte debris to detritus
+corp_det,564,0,Ecology model fitted,Conversion rate coefficient,Corpses to labile sediment detritus
+disc_corp,565,0,Ecology model fitted,Conversion rate coefficient,Discards to corpses
+dsink_s,566,0,Ecology model fitted,Sinking rate coefficient,Upper layer suspended detritus
+dsink_d_,567,0,Ecology model fitted,Sinking rate coefficient,Lower layer suspended detritus
+dfdp,568,0,Ecology model fitted,Scaling parameter,Linking demersal fish survey and model abundance
+pfish_migcoef,569,0,Ecology model fitted,Active migration coefficient,Planktivorous fish
+mfish_migcoef,570,0,Ecology model fitted,Active migration coefficient,Migratory fish
+dfish_migcoef,571,0,Ecology model fitted,Active migration coefficient,Demersal fish
+bird_migcoef,572,0,Ecology model fitted,Active migration coefficient,Birds
+seal_migcoef,573,0,Ecology model fitted,Active migration coefficient,Pinnipeds
+ceta_migcoef,574,0,Ecology model fitted,Active migration coefficient,Cetaceans
+protect_PF_o,575,0,Ecology model fitted,Threshold biomass for zero exploitable stock remaining,Planktivorous fish offshore
+protect_DF_o,576,0,Ecology model fitted,Threshold biomass for zero exploitable stock remaining,Demersal fish offshore
+protect_MF_o,577,0,Ecology model fitted,Threshold biomass for zero exploitable stock remaining,Migratory fish offshore
+protect_SB_o,578,0,Ecology model fitted,Threshold biomass for zero exploitable stock remaining,Suspension/deposit feeding benthos offshore
+protect_CB_o,579,0,Ecology model fitted,Threshold biomass for zero exploitable stock remaining,Carnivore/scavenge feeding benthos offshore
+protect_CZ_o,580,0,Ecology model fitted,Threshold biomass for zero exploitable stock remaining,Carnivorous zooplankton offshore
+protect_BD_o,581,0,Ecology model fitted,Threshold biomass for zero exploitable stock remaining,Birds offshore
+protect_SL_o,582,0,Ecology model fitted,Threshold biomass for zero exploitable stock remaining,Pinnipeds offshore
+protect_CT_o,583,0,Ecology model fitted,Threshold biomass for zero exploitable stock remaining,Cetaceans offshore
+protect_PF_i,584,0,Ecology model fitted,Threshold biomass for zero exploitable stock remaining,Planktivorous fish inshore
+protect_DF_i,585,0,Ecology model fitted,Threshold biomass for zero exploitable stock remaining,Demersal fish inshore
+protect_MF_i,586,0,Ecology model fitted,Threshold biomass for zero exploitable stock remaining,Migratory fish inshore
+protect_SB_i,587,0,Ecology model fitted,Threshold biomass for zero exploitable stock remaining,Suspension/deposit feeding benthos inshore
+protect_CB_i,588,0,Ecology model fitted,Threshold biomass for zero exploitable stock remaining,Carnivore/scavenge feeding benthos inshore
+protect_CZ_i,589,0,Ecology model fitted,Threshold biomass for zero exploitable stock remaining,Carnivorous zooplankton inshore
+protect_BD_i,590,0,Ecology model fitted,Threshold biomass for zero exploitable stock remaining,Birds inshore
+protect_SL_i,591,0,Ecology model fitted,Threshold biomass for zero exploitable stock remaining,Pinnipeds inshore
+protect_CT_i,592,0,Ecology model fitted,Threshold biomass for zero exploitable stock remaining,Cetaceans inshore
+protect_KP_i,593,0,Ecology model fitted,Threshold biomass for zero exploitable stock remaining,Macrophytes inshore
+max_exploitable_f_PF,594,1,Ecology model fixed,Maximum exploitable fraction of stock,Planktivorous fish
+max_exploitable_f_DF,595,1,Ecology model fixed,Maximum exploitable fraction of stock,Demersal fish
+max_exploitable_f_MF,596,1,Ecology model fixed,Maximum exploitable fraction of stock,Migratory fish
+max_exploitable_f_SB,597,1,Ecology model fixed,Maximum exploitable fraction of stock,Suspension/deposit feeding benthos
+max_exploitable_f_CB,598,1,Ecology model fixed,Maximum exploitable fraction of stock,Carnivore/scavenge feeding benthos
+max_exploitable_f_CZ,599,1,Ecology model fixed,Maximum exploitable fraction of stock,Carnivorous zooplankton
+max_exploitable_f_BD,600,1,Ecology model fixed,Maximum exploitable fraction of stock,Birds
+max_exploitable_f_SL,601,1,Ecology model fixed,Maximum exploitable fraction of stock,Pinnipeds
+max_exploitable_f_CT,602,1,Ecology model fixed,Maximum exploitable fraction of stock,Cetaceans
+max_exploitable_f_KP,603,1,Ecology model fixed,Maximum exploitable fraction of stock,Macrophytes
+PF_fec,604,1,Ecology model fixed,Annual fecundity,Planktivorous fish
+DF_fec,605,1,Ecology model fixed,Annual fecundity,Demersal fish
+BS_fec,606,1,Ecology model fixed,Annual fecundity,Suspension/deposit feeding benthos
+BC_fec,607,1,Ecology model fixed,Annual fecundity,Carnivore/scavenge feeding benthos
+CZ_inedible_biomass_o,608,1,Ecology model fixed,Inedible biomass offshore,Carnivorous zooplankton
+CZ_inedible_biomass_i,609,1,Ecology model fixed,Inedible biomass inshore,Carnivorous zooplankton
+fdriversslight,1001,4,Environmental driver,Sea surface irradiance,Inshore and offshore zones
+fdriverso_logespm,1002,4,Environmental driver,Suspended particulate matter,Offshore zone
+fdriversi_logespm,1003,4,Environmental driver,Suspended particulate matter,Inshore zone
+fdriverso_temp,1004,4,Environmental driver,Temperature,Offshore zone upper layer
+fdriverd_temp,1005,4,Environmental driver,Temperature,Lower layer offshore
+fdriversi_temp,1006,4,Environmental driver,Temperature,Inshore zone
+fdriverv_dif,1007,4,Environmental driver,Vertical diffusion rate,Offshore zone
+fdriverDO_v_dif,1008,4,Environmental driver,Vertical diffusion rate,Deep ocean offshore zone
+fdriverso_inflow,1009,4,Environmental driver,Boundary volume inflow rate,Inshore zone
+fdriverd_inflow,1010,4,Environmental driver,Boundary volume inflow rate,Lower layer offshore
+fdriversi_inflow,1011,4,Environmental driver,Boundary volume inflow rate,Inshore zone
+fdriversi_outflow,1014,4,Environmental driver,Volume outflow rate,Inshore zone
+fdriverso_si_flow,1015,4,Environmental driver,Volume exchange rate,Offshore to inshore zone
+fdriverd_so_upwell,1017,4,Environmental driver,Upwelling rate,Offshore zone
+fdriverso_d_downwell,1018,4,Environmental driver,Downwelling rate,Offshore zone
+fdriverDO_d_upwell,1019,4,Environmental driver,Upwelling rate,Deep ocean offshore zone
+fdriverd_DO_downwell,1020,4,Environmental driver,Downwelling rate,Deep ocean offshore zone
+fdriverriver,1021,4,Environmental driver,River volume inflow rate,Inshore zone
+fdriverboundso_det,1022,4,Environmental driver,Boundary concentration,Upper layer offshore detritus
+fdriverboundd_det,1023,4,Environmental driver,Boundary concentration,Lower layer detritus
+fdriverboundsi_det,1024,4,Environmental driver,Boundary concentration,Inshore detritus
+fdriverboundDO_det,1025,4,Environmental driver,Boundary concentration,Deep ocean detritus
+fdriverboundso_amm,1026,4,Environmental driver,Boundary concentration,Upper layer offshore ammonia
+fdriverboundd_amm,1027,4,Environmental driver,Boundary concentration,Lower layer ammonia
+fdriverboundsi_amm,1028,4,Environmental driver,Boundary concentration,Inshore ammonia
+fdriverboundDO_amm,1029,4,Environmental driver,Boundary concentration,Deep ocean ammonia
+fdriverboundso_nit,1030,4,Environmental driver,Boundary concentration,Upper layer offshore nitrate
+fdriverboundd_nit,1031,4,Environmental driver,Boundary concentration,Lower layer nitrate
+fdriverboundsi_nit,1032,4,Environmental driver,Boundary concentration,Inshore nitrate
+fdriverboundDO_nit,1033,4,Environmental driver,Boundary concentration,Deep ocean nitrate
+fdriverboundso_phyt,1034,4,Environmental driver,Boundary concentration,Upper layer offshore phytoplankton
+fdriverboundd_phyt,1035,4,Environmental driver,Boundary concentration,Lower layer phytoplankton
+fdriverboundsi_phyt,1036,4,Environmental driver,Boundary concentration,Inshore phytoplankton
+fdriverboundriv_amm,1037,4,Environmental driver,Boundary concentration,River ammonia
+fdriverboundriv_nit,1038,4,Environmental driver,Boundary concentration,River nitrate
+fdriverboundriv_det,1039,4,Environmental driver,Boundary concentration,River detritus
+fdriverso_atm_amm,1040,4,Environmental driver,Atmospheric deposition rate,Offshore ammonia
+fdriverso_atm_nit,1041,4,Environmental driver,Atmospheric deposition rate,Offshore nitrate
+fdriversi_atm_amm,1042,4,Environmental driver,Atmospheric deposition rate,Inshore ammonia
+fdriversi_atm_nit,1043,4,Environmental driver,Atmospheric deposition rate,Inshore nitrate
+fdriver_s1_erosion,1044,4,Environmental driver,Natural disturbance rate,Inshore muddy sediments
+fdriver_s2_erosion,1045,4,Environmental driver,Natural disturbance rate,Inshore sandy sediments
+fdriver_s3_erosion,1046,4,Environmental driver,Natural disturbance rate,Inshore coarse sediments
+fdriver_d1_erosion,1047,4,Environmental driver,Natural disturbance rate,Offshore muddy sediments
+fdriver_d2_erosion,1048,4,Environmental driver,Natural disturbance rate,Offshore sandy sediments
+fdriver_d3_erosion,1049,4,Environmental driver,Natural disturbance rate,Offshore coarse sediments
+fdriver_s_wave,1050,4,Environmental driver,Significant wave height,Inshore zone
+fdriverpfish_sp,1051,4,Biological event driver,Spawning rate,Planktivorous fish
+fdriverpfish_rec,1052,4,Biological event driver,Recruitment rate,Planktivorous fish
+fdriverdfish_sp,1053,4,Biological event driver,Spawning rate,Demersal fish
+fdriverdfish_rec,1054,4,Biological event driver,Recruitment rate,Demersal fish
+fdriverbs_sp,1055,4,Biological event driver,Spawning rate,Suspension/deposit feeding benthos
+fdriverbs_rec,1056,4,Biological event driver,Recruitment rate,Suspension/deposit feeding benthos
+fdriverbc_sp,1057,4,Biological event driver,Spawning rate,Carnivore/scavenge feeding benthos
+fdriverbc_rec,1058,4,Biological event driver,Recruitment rate,Carnivore/scavenge feeding benthos
+fdrivermfish_im,1059,4,Biological event driver,Immigration rate,Migratory fish
+fdrivermfish_em,1060,4,Biological event driver,Emigration rate,Migratory fish
