@@ -18,7 +18,7 @@ e2e_plot_ycurve(model, selection="PLANKTIV", results=pf_yield_data,
 max(pf_yield_data$PlankFishland)
 pf_yield_data
 
-#Then make a plot of the dependence of cetaceans on planktivorous fish harvesting rate
+#Then make a plot of the dependence of cetaceans on insectivorous fish harvesting rate
 par(mfrow=c(2,1))
 par(mar=c(3.2,5,2,0.8))
 ym<-1.1*max(pf_yield_data$Birdbiom)
