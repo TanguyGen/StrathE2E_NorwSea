@@ -56,7 +56,7 @@ p1<-ggplot(Fish_mass_prod, aes(x = Decade, y = Biomass_plankti, color = Scenario
   scale_color_viridis_d()+
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1),plot.title = element_text(hjust = 0.5,margin=margin(0,0,40,0)),
-        text = element_text(size = 32))
+        text = element_text(size = 26))
 
 # Plot for demersal fish biomass
 p2<-ggplot(Fish_mass_prod, aes(x = Decade, y = Biomass_demer, color = Scenario, group = Scenario)) +
@@ -69,7 +69,7 @@ p2<-ggplot(Fish_mass_prod, aes(x = Decade, y = Biomass_demer, color = Scenario, 
   scale_color_viridis_d()+
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1),plot.title = element_text(hjust = 0.5,margin=margin(0,0,40,0)),
-        text = element_text(size = 32))
+        text = element_text(size = 26))
 
 # Plot for planktivorous fish production
 p3<-ggplot(Fish_mass_prod, aes(x = Decade, y = Production_plankti, color = Scenario, group = Scenario)) +
@@ -82,7 +82,7 @@ p3<-ggplot(Fish_mass_prod, aes(x = Decade, y = Production_plankti, color = Scena
   scale_color_viridis_d()+
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1),plot.title = element_text(hjust = 0.5,margin=margin(0,0,40,0)),
-        text = element_text(size = 32))
+        text = element_text(size = 26))
 
 # Plot for demersal fish production
 p4<-ggplot(Fish_mass_prod, aes(x = Decade, y = Production_demer, color = Scenario, group = Scenario)) +
@@ -95,11 +95,11 @@ p4<-ggplot(Fish_mass_prod, aes(x = Decade, y = Production_demer, color = Scenari
   scale_color_viridis_d()+
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1),plot.title = element_text(hjust = 0.5,margin=margin(0,0,40,0)),
-        text = element_text(size = 32))
+        text = element_text(size = 26))
 
 
 # Open a pdf file
-pdf("Plots/Mass_Prod.pdf") 
+jpeg("Plots/Mass_Prod.jpeg", width = 1200,height = 500) 
 # 2. Create a plot
 (p1|p2)/(p3|p4)+ 
   plot_layout(guides = "collect") & 
