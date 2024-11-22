@@ -77,7 +77,7 @@ p3<-ggplot(Fish_mass_prod, aes(x = Decade, y = Production_plankti, color = Scena
   geom_point(size = 2) +
   labs(title = "Annual net production of plantivorous fish\nover time for all scenarios",
        x = "",
-       y = "Biomass (mMN/m2/y)",
+       y = "Production (mMN/m2/y)",
        color = "Scenario") +
   scale_color_viridis_d()+
   theme_minimal() +
@@ -90,7 +90,7 @@ p4<-ggplot(Fish_mass_prod, aes(x = Decade, y = Production_demer, color = Scenari
   geom_point(size = 2) +
   labs(title = "Annual net production of demersal fish\nover time for all scenarios",
        x = "",
-       y = "Biomass (mMN/m2/y)",
+       y = "Production (mMN/m2/y)",
        color = "Scenario") +
   scale_color_viridis_d()+
   theme_minimal() +
