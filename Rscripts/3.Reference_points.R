@@ -15,27 +15,181 @@ pf_yield_data <-e2e_run_ycurve(model, selection="PLANKTIV", nyears=10, HRvector=
 e2e_plot_ycurve(model, selection="PLANKTIV", results=pf_yield_data,
                 title="Planktivorous yield with baseline demersal fishing")
 
+pd_yield_data <-e2e_run_ycurve(model, selection="DEMERSAL", nyears=10, HRvector=PFHRvector)
+e2e_plot_ycurve(model, selection="DEMERSAL", results=pd_yield_data,
+                title="Demersal yield with baseline demersal fishing")
+
 max(pf_yield_data$PlankFishland)
 pf_yield_data
 
-#Then make a plot of the dependence of cetaceans on planktivorous fish harvesting rate
-par(mfrow=c(2,1))
-par(mar=c(3.2,5,2,0.8))
-ym<-1.1*max(pf_yield_data$Birdbiom)
-plot(pf_yield_data$PlankFishHRmult,pf_yield_data$Birdbiom,ylim=c(0,ym),type="l",
-     lwd=3,yaxt="n",xaxt="n",ann=FALSE)
-abline(v=1,lty="dashed")
-axis(side=1,las=1,cex.axis=0.9)
-axis(side=2,las=1,cex.axis=0.9)
-mtext("Planktiv. fish harvest ratio multiplier",cex=1,side=1,line=2)
-mtext("Cetacean biomass",cex=1,side=2,line=3.5)
-mtext(bquote("mMN.m"^-2),cex=0.7,side=3,line=-0.05,adj=-0.18)
-ym<-1.1*max(pf_yield_data$Birddisc)
-plot(pf_yield_data$PlankFishHRmult,pf_yield_data$Birddisc,ylim=c(0,ym),type="l",
-     lwd=3,yaxt="n",xaxt="n",ann=FALSE)
-abline(v=1,lty="dashed")
-axis(side=1,las=1,cex.axis=0.9)
-axis(side=2,las=1,cex.axis=0.9)
-mtext("Planktiv. fish harvest ratio multiplier",cex=1,side=1,line=2)
-mtext("Cetacean by-catch",cex=1,side=2,line=3.5)
-mtext(bquote("mMN.m"^-2 ~ ".y"^-1),cex=0.7,side=3,line=-0.05,adj=-0.18)
+#Then make a plot of the dependence of Cetaceans on planktivorous and demersal fish harvesting rate
+# Define ymax for each plot
+ymax_biom <- 1.1 * max(pf_yield_data$Cetaceanbiom)
+
+# Plot for planktivorous fish
+Cetaceanplankti <- ggplot(pf_yield_data, aes(x = PlankFishHRmult, y = Cetaceanbiom)) +
+  geom_line(size = 1) +
+  geom_vline(xintercept = 1, linetype = "dashed") +
+  scale_y_continuous(limits = c(0, ymax_biom)) +
+  labs(
+    x = "Planktivorous fish harvest ratio multiplier",
+    y = "Cetacean biomass"
+  ) +
+  theme_classic() +
+  theme(
+    axis.title.x = element_text(size = 12),
+    axis.title.y = element_text(size = 12),
+    plot.margin = margin(5.5, 10, 5.5, 5.5)
+  )
+
+
+
+ymax_biom_d <- 1.1 * max(pd_yield_data$Cetaceanbiom)
+
+# Plot for Cetacean with demersal harvest ratio
+Cetaceandemer <- ggplot(pd_yield_data, aes(x = DemFishHRmult, y = Cetaceanbiom)) +
+  geom_line(size = 1) +
+  geom_vline(xintercept = 1, linetype = "dashed") +
+  scale_y_continuous(limits = c(0, ymax_biom_d)) +
+  labs(
+    x = "Demersal fish harvest ratio multiplier",
+    y = "Cetacean by-catch"
+  ) +
+  theme_classic() +
+  theme(
+    axis.title.x = element_text(size = 12),
+    axis.title.y = element_text(size = 12),
+    plot.margin = margin(5.5, 10, 5.5, 5.5)
+  )
+
+
+
+#Then make a plot of the dependence of Cetaceans on planktivorous fish harvesting rate
+# Define ymax for each plot
+ymax_biom <- 1.1 * max(pf_yield_data$Cetaceanbiom)
+
+# Plot for Cetacean biomass
+Cetaceanplankti <- ggplot(pf_yield_data, aes(x = PlankFishHRmult, y = Cetaceanbiom)) +
+  geom_line(size = 1) +
+  geom_vline(xintercept = 1, linetype = "dashed") +
+  scale_y_continuous(limits = c(0, ymax_biom)) +
+  labs(
+    x = "Planktivorous fish harvest ratio multiplier",
+    y = "Cetacean biomass"
+  ) +
+  theme_classic() +
+  theme(
+    axis.title.x = element_text(size = 12),
+    axis.title.y = element_text(size = 12),
+    plot.margin = margin(5.5, 10, 5.5, 5.5)
+  )
+
+
+
+# Define ymax for each plot
+ymax_biom_d <- 1.1 * max(pd_yield_data$Cetaceanbiom)
+
+# Plot for Demersal fish
+Cetaceandemer <- ggplot(pd_yield_data, aes(x = DemFishHRmult, y = Cetaceanbiom)) +
+  geom_line(size = 1) +
+  geom_vline(xintercept = 1, linetype = "dashed") +
+  scale_y_continuous(limits = c(0, ymax_biom_d)) +
+  labs(
+    x = "Demersal fish harvest ratio multiplier",
+    y = "Cetacean biomass"
+  ) +
+  theme_classic() +
+  theme(
+    axis.title.x = element_text(size = 12),
+    axis.title.y = element_text(size = 12),
+    plot.margin = margin(5.5, 10, 5.5, 5.5)
+  )
+
+Cetaceanplankti/Cetaceandemer
+
+
+#Then make a plot of the dependence of Birds on planktivorous fish harvesting rate
+# Define ymax for each plot
+ymax_biom <- 1.1 * max(pf_yield_data$Birdbiom)
+
+# Plot for Bird biomass
+Birdplankti <- ggplot(pf_yield_data, aes(x = PlankFishHRmult, y = Birdbiom)) +
+  geom_line(size = 1) +
+  geom_vline(xintercept = 1, linetype = "dashed") +
+  scale_y_continuous(limits = c(0, ymax_biom)) +
+  labs(
+    x = "Planktivorous fish harvest ratio multiplier",
+    y = "Bird biomass"
+  ) +
+  theme_classic() +
+  theme(
+    axis.title.x = element_text(size = 12),
+    axis.title.y = element_text(size = 12),
+    plot.margin = margin(5.5, 10, 5.5, 5.5)
+  )
+
+
+
+# Define ymax for each plot
+ymax_biom_d <- 1.1 * max(pd_yield_data$Birdbiom)
+
+# Plot for Demersal fish
+Birddemer <- ggplot(pd_yield_data, aes(x = DemFishHRmult, y = Birdbiom)) +
+  geom_line(size = 1) +
+  geom_vline(xintercept = 1, linetype = "dashed") +
+  scale_y_continuous(limits = c(0, ymax_biom_d)) +
+  labs(
+    x = "Demersal fish harvest ratio multiplier",
+    y = "Bird biomass"
+  ) +
+  theme_classic() +
+  theme(
+    axis.title.x = element_text(size = 12),
+    axis.title.y = element_text(size = 12),
+    plot.margin = margin(5.5, 10, 5.5, 5.5)
+  )
+
+Birdplankti/Birddemer
+
+#Then make a plot of the dependence of Pinnipeds on planktivorous fish harvesting rate
+# Define ymax for each plot
+ymax_biom <- 1.1 * max(pf_yield_data$Pinnipedbiom)
+
+# Plot for Pinniped biomass
+pinnipedplankti <- ggplot(pf_yield_data, aes(x = PlankFishHRmult, y = Pinnipedbiom)) +
+  geom_line(size = 1) +
+  geom_vline(xintercept = 1, linetype = "dashed") +
+  scale_y_continuous(limits = c(0, ymax_biom)) +
+  labs(
+    x = "Planktivorous fish harvest ratio multiplier",
+    y = "Pinniped biomass"
+  ) +
+  theme_classic() +
+  theme(
+    axis.title.x = element_text(size = 12),
+    axis.title.y = element_text(size = 12),
+    plot.margin = margin(5.5, 10, 5.5, 5.5)
+  )
+
+
+
+# Define ymax for each plot
+ymax_biom_d <- 1.1 * max(pd_yield_data$Pinnipedbiom)
+
+# Plot for Demersal fish
+pinnipeddemer <- ggplot(pd_yield_data, aes(x = DemFishHRmult, y = Pinnipedbiom)) +
+  geom_line(size = 1) +
+  geom_vline(xintercept = 1, linetype = "dashed") +
+  scale_y_continuous(limits = c(0, ymax_biom_d)) +
+  labs(
+    x = "Demersal fish harvest ratio multiplier",
+    y = "Pinniped biomass"
+  ) +
+  theme_classic() +
+  theme(
+    axis.title.x = element_text(size = 12),
+    axis.title.y = element_text(size = 12),
+    plot.margin = margin(5.5, 10, 5.5, 5.5)
+  )
+
+pinnipedplankti/pinnipeddemer
