@@ -20,7 +20,8 @@ GFDL370_models<-list_models[grep(".*GFDL-ssp370.*", list_models)]
 CNRM126<-lapply(CNRM126_models,function(variant) {
   e2e_read(model.name = "Celtic_Sea_MA", 
            model.variant = variant, 
-           models.path = ".")
+           models.path = ".",
+           results.path = "./temp")
 })
 names(CNRM126)<-decades #name them by their corresponding decade
 #Do a run for each of the models
@@ -34,7 +35,8 @@ CNRM126_res<-lapply(CNRM126,function(variant) {
 CNRM370<-lapply(CNRM370_models,function(variant) {
   e2e_read(model.name = "Celtic_Sea_MA", 
            model.variant = variant, 
-           models.path = ".")
+           models.path = ".",
+           results.path = "./temp")
 })
 names(CNRM370)<-decades #name them by their corresponding decade
 #Do a run for each of the models
@@ -48,7 +50,8 @@ CNRM370_res<-lapply(CNRM370,function(variant) {
 GFDL126<-lapply(GFDL126_models,function(variant) {
   e2e_read(model.name = "Celtic_Sea_MA", 
            model.variant = variant, 
-           models.path = ".")
+           models.path = ".",
+           results.path = "./temp")
 })
 names(GFDL126)<-decades #name them by their corresponding decade
 #Do a run for each of the models
@@ -62,7 +65,8 @@ GFDL126_res<-lapply(GFDL126,function(variant) {
 GFDL370<-lapply(GFDL370_models,function(variant) {
   e2e_read(model.name = "Celtic_Sea_MA", 
            model.variant = variant, 
-           models.path = ".")
+           models.path = ".",
+           results.path = "./temp")
 })
 names(GFDL370)<-decades #name them by their corresponding decade
 #Do a run for each of the models
