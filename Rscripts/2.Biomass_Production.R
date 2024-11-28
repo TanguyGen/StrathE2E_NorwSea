@@ -49,7 +49,8 @@ Fish_mass_prod$Decade <- factor(Fish_mass_prod$Decade, levels = unique(Fish_mass
 p1<-ggplot(Fish_mass_prod, aes(x = Decade, y = Biomass_plankti, color = Scenario, group = Scenario)) +
   geom_line(size = 1) +
   geom_point(size = 2) +
-  labs(title = "Annual biomass of plantivorous fish\nover time for all scenarios",
+  ylim(0, max(Biomass_plankti)*1.1)+
+  labs(title = "Annual biomass of plantivorous fish",
        x = "",
        y = "Biomass (mMN/m2/y)",
        color = "Scenario") +
@@ -62,7 +63,8 @@ p1<-ggplot(Fish_mass_prod, aes(x = Decade, y = Biomass_plankti, color = Scenario
 p2<-ggplot(Fish_mass_prod, aes(x = Decade, y = Biomass_demer, color = Scenario, group = Scenario)) +
   geom_line(size = 1) +
   geom_point(size = 2) +
-  labs(title = "Annual biomass of demersal fish\nover time for all scenarios",
+  ylim(0, max(Biomass_demer)*1.1)+
+  labs(title = "Annual biomass of demersal fish",
        x = "",
        y = "Biomass (mMN/m2/y)",
        color = "Scenario") +
@@ -75,7 +77,8 @@ p2<-ggplot(Fish_mass_prod, aes(x = Decade, y = Biomass_demer, color = Scenario, 
 p3<-ggplot(Fish_mass_prod, aes(x = Decade, y = Production_plankti, color = Scenario, group = Scenario)) +
   geom_line(size = 1) +
   geom_point(size = 2) +
-  labs(title = "Annual net production of plantivorous fish\nover time for all scenarios",
+  ylim(0, max(Production_plankti)*1.1)+
+  labs(title = "Annual net production of plantivorous fish",
        x = "",
        y = "Production (mMN/m2/y)",
        color = "Scenario") +
@@ -88,7 +91,8 @@ p3<-ggplot(Fish_mass_prod, aes(x = Decade, y = Production_plankti, color = Scena
 p4<-ggplot(Fish_mass_prod, aes(x = Decade, y = Production_demer, color = Scenario, group = Scenario)) +
   geom_line(size = 1) +
   geom_point(size = 2) +
-  labs(title = "Annual net production of demersal fish\nover time for all scenarios",
+  ylim(0, max(Production_demer)*1.1)+
+  labs(title = "Annual net production of demersal fish",
        x = "",
        y = "Production (mMN/m2/y)",
        color = "Scenario") +
