@@ -46,12 +46,23 @@ run_ycurve_with_bisection <- function(model, selection, hr_field, nyears = 10, t
     
     # Update the difference between highest catches
     diff_highest_catches <- catches[sorted_indices[1]] - catches[sorted_indices[2]]
+    diff_highest_hr<-
     
     # Adjust HR_min and HR_max to focus on the top region
     if (diff_highest_catches > threshold) {
       HR_min <- min(top_hr_values)
       HR_max <- max(top_hr_values)
     } else {
+      max_catch_hr <- hr_values[sorted_indices[1]]
+      HR_min <- 0.9 * max_catch_hr
+      HR_max <- 1.1 * max_catch_hr
+      HRvector <- seq(HR_min, HR_max, length.out = 10)  # Higher precision
+      yield_data_refined <- e2e_run_ycurve(model, selection = selection, nyears = nyears, HRvector = HRvector)
+      
+      # Add refined yield data and exit loop
+      all_yield_data <- bind_rows(all_yield_data, as_tibble(yield_data_refined)) %>%
+        distinct(across(hr_field), .keep_all = TRUE) %>%
+        arrange(across(hr_field))
       break
     }
   }
@@ -93,7 +104,7 @@ fisheries_hr <- names(models_lists) %>%
 saveRDS(fisheries_hr,file="./temp/Fisheries_MSY.RDS")
 toc() #3h20
 
-test<-e2e_run_ycurve(models_lists$CNRM_SSP126$`2010-2019`,selection="PLANKTIV", nyears=3, HRvector=HRvector)
+e2e_plot_ycurve(list_models$CNRM_SSP126$`2010-2019`,selection="PLANKTIV",use.saved = FALSE,results=fisheries_hr$CNRM_SSP126$`2010-2019`$PF_Yield_Data_All)
 #fisheries_hr<-readRDS(file="./temp/Fisheries_MSY.RDS")
 
 MSY <- lapply(names(fisheries_hr),FUN=function(scenario){
