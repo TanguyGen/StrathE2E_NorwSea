@@ -29,7 +29,7 @@ Fish_mass_prod <- lapply(names(results_lists), function(scenario) {
       filter(Description == "Planktiv.fish_net_production")
     demer_production <- production_results %>%
       filter(Description == "Dem.fish_net_production")
-    
+    print(demer_production$Model_annual_flux)
     # Create a data frame
     data.frame(
       Decade = decade,
@@ -49,7 +49,7 @@ Fish_mass_prod$Decade <- factor(Fish_mass_prod$Decade, levels = unique(Fish_mass
 p1<-ggplot(Fish_mass_prod, aes(x = Decade, y = Biomass_plankti, color = Scenario, group = Scenario)) +
   geom_line(size = 1) +
   geom_point(size = 2) +
-  ylim(0, max(Biomass_plankti)*1.1)+
+  ylim(0, max(Fish_mass_prod$Biomass_plankti)*1.1)+
   labs(title = "Annual biomass of plantivorous fish",
        x = "",
        y = "Biomass (mMN/m2/y)",
@@ -63,7 +63,7 @@ p1<-ggplot(Fish_mass_prod, aes(x = Decade, y = Biomass_plankti, color = Scenario
 p2<-ggplot(Fish_mass_prod, aes(x = Decade, y = Biomass_demer, color = Scenario, group = Scenario)) +
   geom_line(size = 1) +
   geom_point(size = 2) +
-  ylim(0, max(Biomass_demer)*1.1)+
+  ylim(0, max(Fish_mass_prod$Biomass_demer)*1.1)+
   labs(title = "Annual biomass of demersal fish",
        x = "",
        y = "Biomass (mMN/m2/y)",
@@ -77,7 +77,7 @@ p2<-ggplot(Fish_mass_prod, aes(x = Decade, y = Biomass_demer, color = Scenario, 
 p3<-ggplot(Fish_mass_prod, aes(x = Decade, y = Production_plankti, color = Scenario, group = Scenario)) +
   geom_line(size = 1) +
   geom_point(size = 2) +
-  ylim(0, max(Production_plankti)*1.1)+
+  ylim(0, max(Fish_mass_prod$Production_plankti)*1.1)+
   labs(title = "Annual net production of plantivorous fish",
        x = "",
        y = "Production (mMN/m2/y)",
@@ -91,7 +91,7 @@ p3<-ggplot(Fish_mass_prod, aes(x = Decade, y = Production_plankti, color = Scena
 p4<-ggplot(Fish_mass_prod, aes(x = Decade, y = Production_demer, color = Scenario, group = Scenario)) +
   geom_line(size = 1) +
   geom_point(size = 2) +
-  ylim(0, max(Production_demer)*1.1)+
+  ylim(0, max(Fish_mass_prod$Production_demer)*1.1)+
   labs(title = "Annual net production of demersal fish",
        x = "",
        y = "Production (mMN/m2/y)",
@@ -100,6 +100,10 @@ p4<-ggplot(Fish_mass_prod, aes(x = Decade, y = Production_demer, color = Scenari
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1),plot.title = element_text(hjust = 0.5,margin=margin(0,0,40,0)),
         text = element_text(size = 26))
+
+(p1|p3)/(p2|p4)+ 
+  plot_layout(guides = "collect") & 
+  theme(legend.position = "bottom")
 
 
 # Open a pdf file
