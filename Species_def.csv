@@ -1,0 +1,23 @@
+FullName,Flux_names,Cons_names,Conversion_rate
+Benthos Carnivorous/Scavenger,benthc,benthosc/s,1.006289308
+Benthos Carnivorous/Scavenger Larvae,benthclar,benthosc/s.larvae,1.257861635
+Benthos Carnivorous/Scavenger,,benthosc/sc,1.006289308
+Benthos Suspensivorous/Detritivorous,benths,benthoss/d,0.503144654
+Benthos Suspensivorous/Detritivorous Larvae,benthslar,benthoss/d.larvae,1.257861635
+Birds,bird,birds,2.51572327
+Carnivorous Zooplankton,carn,carniv.zooplankton,1.257861635
+Cetaceans,ceta,cetaceans,2.51572327
+Corpses,corp,corpses,1.257861635
+Demersal Fish,dfish,dem.fish,1.257861635
+Demersal Fish Larvae,dfishlar,dem.fish.larvae,1.295597484
+Migratory Fish,mfish,mig.fish,2.314465409
+Omnivorous Zooplankton,omni,omniv.zooplankton,1.257861635
+Pinnipeds,seal,pinnipeds,2.51572327
+Planktivorous Fish,pfish,plank.fish,2.037735849
+Planktivorous Fish Larvae,pfishlar,plank.fish.larvae,2.07
+Detritus,xRdet,detritus,1.257861635
+Discards,disc,discards,1.257861635
+Sediment Detritus,xdet,sediment.detritus,1.257861635
+Macrophytes,kelp,macrophyte,2.07
+Macrophytes debris,kelpdebris,macrophyte.debris,2.07
+Phytoplankton,phyt,phytoplankton,1.257861635
