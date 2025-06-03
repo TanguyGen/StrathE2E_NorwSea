@@ -1,0 +1,2 @@
+parallelly::supportsMulticore()
+parallelly::availableCores()
